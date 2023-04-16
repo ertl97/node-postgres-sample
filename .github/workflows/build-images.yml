@@ -1,13 +1,10 @@
-name: Build and push image
+name: Hello World
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
-  build-and-push:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Print Message
+        run: echo "Hello World!"
